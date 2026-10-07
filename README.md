@@ -8,6 +8,10 @@ Buy a California home through the AI you already use. Research homes, compare sa
 
 ## Connect
 
+Gemini CLI currently requires a Gemini Code Assist Standard or Enterprise license, or a paid Gemini / Gemini Enterprise Agent Platform API key. Google moved consumer access, including free accounts and Google AI Pro/Ultra, to **Antigravity CLI** on June 18, 2026. See [Google's account guidance](https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/). A personal Google sign-in alone does not establish Gemini CLI access.
+
+This package targets Gemini CLI. Antigravity uses a separate plugin format; an Ohvii Antigravity package and native connection have not yet been verified.
+
 Install [Gemini CLI](https://geminicli.com/docs/get-started/installation/), then install Ohvii:
 
 ```sh
@@ -15,7 +19,7 @@ gemini extensions install https://github.com/ohvii/gemini-extension
 gemini
 ```
 
-Review the extension's requested access. Sign in to Gemini CLI with your Google account or another supported Gemini authentication method. In the Gemini CLI conversation, run:
+Review the extension's requested access. Authenticate using your supported Gemini CLI license or paid API method. In the Gemini CLI conversation, run:
 
 ```text
 /mcp auth ohvii
@@ -24,7 +28,7 @@ Review the extension's requested access. Sign in to Gemini CLI with your Google 
 
 Sign in to your Ohvii account in the browser, review the requested permissions and approve the connection. Return to Gemini CLI and confirm that Ohvii is connected. If you installed the extension while Gemini CLI was already running, restart that session first.
 
-Your Google sign-in powers Gemini CLI; your Ohvii sign-in connects your saved homes and purchase records. Never paste tokens, cookies or authorization codes into a conversation. No API key or static bearer header is needed for Ohvii.
+Your Gemini authentication powers the AI; your separate Ohvii sign-in connects your saved homes and purchase records. Never paste tokens, cookies or authorization codes into a conversation. No API key or static bearer header is needed for Ohvii.
 
 The extension automatically loads the shared buyer workflow in `GEMINI.md`. It connects directly to the hosted Ohvii service over Streamable HTTP and uses OAuth discovery. It contains no executable hooks, local server, credentials or buyer records. Use a current Gemini CLI release with remote MCP OAuth support.
 

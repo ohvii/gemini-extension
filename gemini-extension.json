@@ -1,0 +1,11 @@
+{
+  "name": "ohvii",
+  "version": "1.0.0",
+  "description": "Find homes with your AI, then use Ohvii to carry the purchase from listing to close.",
+  "mcpServers": {
+    "ohvii": {
+      "httpUrl": "https://ohvii.com/api/mcp"
+    }
+  },
+  "contextFileName": "GEMINI.md"
+}
